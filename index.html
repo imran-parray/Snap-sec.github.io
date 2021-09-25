@@ -707,16 +707,28 @@ Of course. Every time you perform an update on your systems you should check tha
             <h4>Join Our Newsletter</h4>
             <p>Enter your email to remain updated with new security trends, Blog Posts and News Letters posted by snapsec.</p>
             <form id="NewsLetter" action="https://formspree.io/f/xdoybrnb" method="post">
-              <input type="email" name="email">
-              <input type="button" value="Subscribe">
+              <input type="email" id="emailx" name="email">
+              <input type="button" onclick="sendEmailtoNewLetter()" value="Subscribe">
             </form>
           </div>
         </div>
       </div>
     </div>
     <script>
+      function sendEmailtoNewLetter(){
   document.getElementById("NewsLetter").submit();
+emx=document.getElementById("emailx").value;
 
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://formspree.io/f/xdoybrnb', true);
+xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+xhr.onload = function () {
+    // do something to response
+    console.log(this.responseText);
+};
+xhr.send('email='+emx);
+
+      }
     </script>
     
     <div class="footer-top">
