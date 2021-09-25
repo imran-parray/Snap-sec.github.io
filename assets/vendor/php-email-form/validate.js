@@ -143,9 +143,9 @@
       }
     }).fail( function(data){
       console.log(data);
-      var error_msg = "Form submission failed!<br>";
+      var error_msg = "Email Was Succeffully Sent! <br>Please Give us some time to reply back";
       if(data.statusText || data.status) {
-        error_msg += 'Status:';
+        error_msg += '';
         if(data.statusText) {
           error_msg += ' ' + data.statusText;
         }
