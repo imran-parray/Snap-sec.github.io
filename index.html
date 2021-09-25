@@ -706,14 +706,19 @@ Of course. Every time you perform an update on your systems you should check tha
           <div class="col-lg-6">
             <h4>Join Our Newsletter</h4>
             <p>Enter your email to remain updated with new security trends, Blog Posts and News Letters posted by snapsec.</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+            <form id="NewsLetter" action="https://formspree.io/f/xdoybrnb" method="post">
+              <input type="email" name="email">
+              <input type="button" value="Subscribe">
             </form>
           </div>
         </div>
       </div>
     </div>
+    <script>
+  document.getElementById("NewsLetter").submit();
 
+    </script>
+    
     <div class="footer-top">
       <div class="container">
         <div class="row">
