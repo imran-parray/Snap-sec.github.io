@@ -24,7 +24,7 @@ xhttp.onreadystatechange = function() {
         storeDepSet: !0
     }
 }, xhttp.open("POST", "https://us10-ws.cloud.samsara.com/r/graphql?q=UpsertUser", !0),
-xhr.withCredentials = true,
+xhttp.withCredentials = true,
 xhttp.setRequestHeader('X-Csrf-Token', csrfValue),
 
 xhttp.send(JSON.stringify(body));
